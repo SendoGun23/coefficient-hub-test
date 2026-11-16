@@ -30,6 +30,33 @@ for (const filename of ['countries.json', 'clubs.json', 'fixtures.json']) {
   if (!Array.isArray(file.rows) || file.rows.length !== file.count) throw Error(filename + ': row count mismatch');
   checks++;
 }
+// Eurocoeff club ranking: descending score is the default, equal scores share rank.
+const clubsPayload = JSON.parse(fs.readFileSync(path.join(root, 'data', 'clubs.json'), 'utf8'));
+const clubRows = clubsPayload.rows;
+if (clubsPayload.source !== 'https://eurocoeff.com/en/rankings/clubs/' ||
+    clubRows.length !== 237 ||
+    clubRows.some(x => !Number.isFinite(x.score) || !Number.isInteger(x.rank))) {
+  throw Error('clubs.json: invalid Eurocoeff ranking');
+}
+const sortedClubs = [...clubRows].sort((a,b) => b.score - a.score || a.rank - b.rank || a.name.localeCompare(b.name));
+for (let i=0; i<sortedClubs.length; i++) {
+  const expected = i && sortedClubs[i].score === sortedClubs[i-1].score ? sortedClubs[i-1].rank : i+1;
+  if (sortedClubs[i].rank !== expected) throw Error('clubs.json: Eurocoeff rank/score mismatch at '+i);
+}
+const clubsPage = fs.readFileSync(path.join(root,'vereine.html'),'utf8');
+if (!/<option value="score">Höchste Punkte zuerst<\/option>/.test(clubsPage) ||
+    !clubsPage.includes('b.score-a.score')) throw Error('vereine.html: default club ranking must be descending');
+checks += 3;
+// All three UEFA men's club competitions must be explicitly represented.
+const requiredCompetitions = ['UCL','UEL','UECL'];
+const presentCompetitions = new Set(fixturePayloadPlaceholder());
+function fixturePayloadPlaceholder() {
+  return JSON.parse(fs.readFileSync(path.join(root,'data','fixtures.json'),'utf8')).rows.map(x=>x.competition);
+}
+for (const competition of requiredCompetitions) {
+  if (!presentCompetitions.has(competition)) throw Error('fixtures.json: missing '+competition);
+  checks++;
+}
 // Cross-check the 3/1/0 partial standings against every recorded match.
 const fixturePayload = JSON.parse(fs.readFileSync(path.join(root, 'data', 'fixtures.json'), 'utf8'));
 const fixtures = fixturePayload.rows;
