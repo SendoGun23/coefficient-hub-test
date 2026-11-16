@@ -1,0 +1,1194 @@
+{
+  "source": "https://eurocoeff.com/en/rankings/clubs/",
+  "retrieved_at_utc": "2026-11-16T17:36:38+00:00",
+  "verified_by_uefa": false,
+  "status": "third_party_snapshot",
+  "count": 237,
+  "rows": [
+    {
+      "rank": 1,
+      "name": "Bayern Munich",
+      "score": 147.5
+    },
+    {
+      "rank": 2,
+      "name": "Real Madrid",
+      "score": 144.5
+    },
+    {
+      "rank": 3,
+      "name": "Paris Saint-Germain",
+      "score": 132.0
+    },
+    {
+      "rank": 4,
+      "name": "Liverpool",
+      "score": 130.0
+    },
+    {
+      "rank": 5,
+      "name": "Inter Milan",
+      "score": 127.0
+    },
+    {
+      "rank": 6,
+      "name": "Manchester City",
+      "score": 125.5
+    },
+    {
+      "rank": 7,
+      "name": "Arsenal",
+      "score": 119.0
+    },
+    {
+      "rank": 8,
+      "name": "Barcelona",
+      "score": 113.25
+    },
+    {
+      "rank": 9,
+      "name": "Bayer Leverkusen",
+      "score": 105.0
+    },
+    {
+      "rank": 10,
+      "name": "Atlético Madrid",
+      "score": 104.75
+    },
+    {
+      "rank": 11,
+      "name": "Borussia Dortmund",
+      "score": 100.75
+    },
+    {
+      "rank": 12,
+      "name": "Roma",
+      "score": 97.75
+    },
+    {
+      "rank": 13,
+      "name": "Benfica",
+      "score": 90.0
+    },
+    {
+      "rank": 14,
+      "name": "Atalanta",
+      "score": 84.0
+    },
+    {
+      "rank": 14,
+      "name": "Sporting CP",
+      "score": 84.0
+    },
+    {
+      "rank": 16,
+      "name": "Aston Villa",
+      "score": 83.0
+    },
+    {
+      "rank": 17,
+      "name": "Porto",
+      "score": 80.75
+    },
+    {
+      "rank": 18,
+      "name": "Manchester United",
+      "score": 76.5
+    },
+    {
+      "rank": 19,
+      "name": "Club Brugge",
+      "score": 75.25
+    },
+    {
+      "rank": 20,
+      "name": "Real Betis",
+      "score": 74.5
+    },
+    {
+      "rank": 21,
+      "name": "Juventus",
+      "score": 72.25
+    },
+    {
+      "rank": 22,
+      "name": "PSV",
+      "score": 71.25
+    },
+    {
+      "rank": 23,
+      "name": "Feyenoord",
+      "score": 71.0
+    },
+    {
+      "rank": 24,
+      "name": "Lille",
+      "score": 68.75
+    },
+    {
+      "rank": 25,
+      "name": "Milan",
+      "score": 66.0
+    },
+    {
+      "rank": 26,
+      "name": "Lyon",
+      "score": 65.75
+    },
+    {
+      "rank": 27,
+      "name": "Bodø/Glimt",
+      "score": 64.0
+    },
+    {
+      "rank": 28,
+      "name": "Sporting Braga",
+      "score": 63.75
+    },
+    {
+      "rank": 29,
+      "name": "Napoli",
+      "score": 63.0
+    },
+    {
+      "rank": 30,
+      "name": "AZ Alkmaar",
+      "score": 62.875
+    },
+    {
+      "rank": 31,
+      "name": "Olympiacos",
+      "score": 62.25
+    },
+    {
+      "rank": 32,
+      "name": "RB Leipzig",
+      "score": 61.0
+    },
+    {
+      "rank": 33,
+      "name": "Rangers",
+      "score": 59.25
+    },
+    {
+      "rank": 34,
+      "name": "Villarreal",
+      "score": 59.0
+    },
+    {
+      "rank": 35,
+      "name": "Ajax",
+      "score": 58.25
+    },
+    {
+      "rank": 36,
+      "name": "Fenerbahçe",
+      "score": 57.75
+    },
+    {
+      "rank": 37,
+      "name": "Real Sociedad",
+      "score": 57.0
+    },
+    {
+      "rank": 38,
+      "name": "SC Freiburg",
+      "score": 56.5
+    },
+    {
+      "rank": 39,
+      "name": "Shakhtar",
+      "score": 56.25
+    },
+    {
+      "rank": 40,
+      "name": "Monaco",
+      "score": 56.0
+    },
+    {
+      "rank": 41,
+      "name": "Copenhagen",
+      "score": 54.375
+    },
+    {
+      "rank": 42,
+      "name": "Marseille",
+      "score": 54.0
+    },
+    {
+      "rank": 43,
+      "name": "Galatasaray",
+      "score": 53.5
+    },
+    {
+      "rank": 44,
+      "name": "Ferencváros",
+      "score": 51.25
+    },
+    {
+      "rank": 45,
+      "name": "Viktoria Plzeň",
+      "score": 50.5
+    },
+    {
+      "rank": 46,
+      "name": "Midtjylland",
+      "score": 48.25
+    },
+    {
+      "rank": 46,
+      "name": "PAOK",
+      "score": 48.25
+    },
+    {
+      "rank": 48,
+      "name": "Union SG",
+      "score": 48.0
+    },
+    {
+      "rank": 49,
+      "name": "Crvena Zvezda",
+      "score": 46.5
+    },
+    {
+      "rank": 49,
+      "name": "GNK Dinamo",
+      "score": 46.5
+    },
+    {
+      "rank": 51,
+      "name": "Salzburg",
+      "score": 45.0
+    },
+    {
+      "rank": 52,
+      "name": "Celtic",
+      "score": 44.0
+    },
+    {
+      "rank": 52,
+      "name": "Slavia Praha",
+      "score": 44.0
+    },
+    {
+      "rank": 54,
+      "name": "Qarabağ",
+      "score": 42.75
+    },
+    {
+      "rank": 55,
+      "name": "Gent",
+      "score": 39.0
+    },
+    {
+      "rank": 56,
+      "name": "Sparta Praha",
+      "score": 38.25
+    },
+    {
+      "rank": 57,
+      "name": "S. Bratislava",
+      "score": 36.0
+    },
+    {
+      "rank": 58,
+      "name": "Rennes",
+      "score": 35.0
+    },
+    {
+      "rank": 59,
+      "name": "M. Tel-Aviv",
+      "score": 32.5
+    },
+    {
+      "rank": 60,
+      "name": "Anderlecht",
+      "score": 30.75
+    },
+    {
+      "rank": 61,
+      "name": "SK Rapid",
+      "score": 29.75
+    },
+    {
+      "rank": 62,
+      "name": "Panathinaikos",
+      "score": 29.25
+    },
+    {
+      "rank": 63,
+      "name": "Ludogorets",
+      "score": 28.75
+    },
+    {
+      "rank": 64,
+      "name": "Sturm Graz",
+      "score": 28.0
+    },
+    {
+      "rank": 65,
+      "name": "VfB Stuttgart",
+      "score": 27.5
+    },
+    {
+      "rank": 66,
+      "name": "Lech Poznań",
+      "score": 27.25
+    },
+    {
+      "rank": 67,
+      "name": "FCSB",
+      "score": 25.5
+    },
+    {
+      "rank": 68,
+      "name": "Pafos",
+      "score": 24.125
+    },
+    {
+      "rank": 69,
+      "name": "AEK Athens",
+      "score": 24.0
+    },
+    {
+      "rank": 70,
+      "name": "Bournemouth",
+      "score": 23.903
+    },
+    {
+      "rank": 70,
+      "name": "Brighton",
+      "score": 23.903
+    },
+    {
+      "rank": 70,
+      "name": "Crystal Palace",
+      "score": 23.903
+    },
+    {
+      "rank": 70,
+      "name": "Sunderland",
+      "score": 23.903
+    },
+    {
+      "rank": 74,
+      "name": "Celje",
+      "score": 23.0
+    },
+    {
+      "rank": 75,
+      "name": "Raków",
+      "score": 22.25
+    },
+    {
+      "rank": 76,
+      "name": "Jagiellonia",
+      "score": 22.0
+    },
+    {
+      "rank": 76,
+      "name": "Partizan",
+      "score": 22.0
+    },
+    {
+      "rank": 78,
+      "name": "Lugano",
+      "score": 21.25
+    },
+    {
+      "rank": 78,
+      "name": "Omonia",
+      "score": 21.25
+    },
+    {
+      "rank": 80,
+      "name": "LASK",
+      "score": 21.0
+    },
+    {
+      "rank": 81,
+      "name": "AEK Larnaca",
+      "score": 20.25
+    },
+    {
+      "rank": 82,
+      "name": "Sheriff",
+      "score": 20.0
+    },
+    {
+      "rank": 83,
+      "name": "Como",
+      "score": 19.989
+    },
+    {
+      "rank": 84,
+      "name": "Başakşehir",
+      "score": 19.5
+    },
+    {
+      "rank": 85,
+      "name": "Celta",
+      "score": 19.409
+    },
+    {
+      "rank": 85,
+      "name": "Getafe",
+      "score": 19.409
+    },
+    {
+      "rank": 87,
+      "name": "Shamrock Rovers",
+      "score": 19.375
+    },
+    {
+      "rank": 88,
+      "name": "Rijeka",
+      "score": 18.625
+    },
+    {
+      "rank": 89,
+      "name": "Hoffenheim",
+      "score": 18.58
+    },
+    {
+      "rank": 90,
+      "name": "CFR Cluj",
+      "score": 17.5
+    },
+    {
+      "rank": 90,
+      "name": "Dynamo Kyiv",
+      "score": 17.5
+    },
+    {
+      "rank": 92,
+      "name": "Lens",
+      "score": 16.699
+    },
+    {
+      "rank": 93,
+      "name": "Beşiktaş",
+      "score": 15.5
+    },
+    {
+      "rank": 94,
+      "name": "Torreense",
+      "score": 14.633
+    },
+    {
+      "rank": 95,
+      "name": "H. Beer-Sheva",
+      "score": 14.0
+    },
+    {
+      "rank": 95,
+      "name": "HJK",
+      "score": 14.0
+    },
+    {
+      "rank": 95,
+      "name": "KuPS Kuopio",
+      "score": 14.0
+    },
+    {
+      "rank": 98,
+      "name": "Drita",
+      "score": 13.625
+    },
+    {
+      "rank": 99,
+      "name": "N.E.C.",
+      "score": 13.585
+    },
+    {
+      "rank": 99,
+      "name": "Twente",
+      "score": 13.585
+    },
+    {
+      "rank": 101,
+      "name": "L. Red Imps",
+      "score": 13.5
+    },
+    {
+      "rank": 102,
+      "name": "Zrinjski",
+      "score": 13.25
+    },
+    {
+      "rank": 103,
+      "name": "Borac",
+      "score": 13.125
+    },
+    {
+      "rank": 104,
+      "name": "Astana",
+      "score": 12.5
+    },
+    {
+      "rank": 104,
+      "name": "RFS",
+      "score": 12.5
+    },
+    {
+      "rank": 106,
+      "name": "Sint-Truidense",
+      "score": 12.45
+    },
+    {
+      "rank": 107,
+      "name": "Brann",
+      "score": 12.25
+    },
+    {
+      "rank": 108,
+      "name": "Žalgiris",
+      "score": 12.0
+    },
+    {
+      "rank": 109,
+      "name": "Víkingur R.",
+      "score": 11.75
+    },
+    {
+      "rank": 110,
+      "name": "Hearts",
+      "score": 11.5
+    },
+    {
+      "rank": 111,
+      "name": "Kairat Almaty",
+      "score": 11.0
+    },
+    {
+      "rank": 111,
+      "name": "Trabzonspor",
+      "score": 11.0
+    },
+    {
+      "rank": 113,
+      "name": "Shkëndija",
+      "score": 10.875
+    },
+    {
+      "rank": 114,
+      "name": "Noah",
+      "score": 10.75
+    },
+    {
+      "rank": 115,
+      "name": "Klaksvík",
+      "score": 10.5
+    },
+    {
+      "rank": 115,
+      "name": "Riga",
+      "score": 10.5
+    },
+    {
+      "rank": 115,
+      "name": "Spartak Trnava",
+      "score": 10.5
+    },
+    {
+      "rank": 115,
+      "name": "Univ. Craiova",
+      "score": 10.5
+    },
+    {
+      "rank": 119,
+      "name": "Ballkani",
+      "score": 10.0
+    },
+    {
+      "rank": 119,
+      "name": "Flora Tallinn",
+      "score": 10.0
+    },
+    {
+      "rank": 119,
+      "name": "Hajduk Split",
+      "score": 10.0
+    },
+    {
+      "rank": 119,
+      "name": "Pyunik",
+      "score": 10.0
+    },
+    {
+      "rank": 123,
+      "name": "Hradec Králové",
+      "score": 9.705
+    },
+    {
+      "rank": 123,
+      "name": "Jablonec",
+      "score": 9.705
+    },
+    {
+      "rank": 125,
+      "name": "OFI Crete",
+      "score": 9.682
+    },
+    {
+      "rank": 126,
+      "name": "Austria Wien",
+      "score": 9.5
+    },
+    {
+      "rank": 126,
+      "name": "Linfield",
+      "score": 9.5
+    },
+    {
+      "rank": 128,
+      "name": "Górnik Zabrze",
+      "score": 9.35
+    },
+    {
+      "rank": 128,
+      "name": "Katowice",
+      "score": 9.35
+    },
+    {
+      "rank": 130,
+      "name": "Larne",
+      "score": 9.0
+    },
+    {
+      "rank": 130,
+      "name": "Petrocub",
+      "score": 9.0
+    },
+    {
+      "rank": 130,
+      "name": "The New Saints",
+      "score": 9.0
+    },
+    {
+      "rank": 133,
+      "name": "Hamrun Spartans",
+      "score": 8.5
+    },
+    {
+      "rank": 133,
+      "name": "Vaduz",
+      "score": 8.5
+    },
+    {
+      "rank": 135,
+      "name": "Aarhus",
+      "score": 8.421
+    },
+    {
+      "rank": 135,
+      "name": "Nordsjælland",
+      "score": 8.421
+    },
+    {
+      "rank": 137,
+      "name": "Lillestrøm",
+      "score": 8.247
+    },
+    {
+      "rank": 137,
+      "name": "Tromsø",
+      "score": 8.247
+    },
+    {
+      "rank": 137,
+      "name": "Viking",
+      "score": 8.247
+    },
+    {
+      "rank": 140,
+      "name": "Tobol",
+      "score": 8.0
+    },
+    {
+      "rank": 141,
+      "name": "Inter Escaldes",
+      "score": 7.5
+    },
+    {
+      "rank": 141,
+      "name": "Levadia Tallinn",
+      "score": 7.5
+    },
+    {
+      "rank": 141,
+      "name": "Milsami",
+      "score": 7.5
+    },
+    {
+      "rank": 141,
+      "name": "Paide",
+      "score": 7.5
+    },
+    {
+      "rank": 145,
+      "name": "Apollon",
+      "score": 7.138
+    },
+    {
+      "rank": 146,
+      "name": "Ararat-Armenia",
+      "score": 7.0
+    },
+    {
+      "rank": 146,
+      "name": "H. Bóltfelag",
+      "score": 7.0
+    },
+    {
+      "rank": 146,
+      "name": "Hibernian",
+      "score": 7.0
+    },
+    {
+      "rank": 146,
+      "name": "Levski Sofia",
+      "score": 7.0
+    },
+    {
+      "rank": 150,
+      "name": "Sion",
+      "score": 6.94
+    },
+    {
+      "rank": 150,
+      "name": "St. Gallen",
+      "score": 6.94
+    },
+    {
+      "rank": 150,
+      "name": "Thun",
+      "score": 6.94
+    },
+    {
+      "rank": 153,
+      "name": "CSKA Sofia",
+      "score": 6.5
+    },
+    {
+      "rank": 153,
+      "name": "Differdange",
+      "score": 6.5
+    },
+    {
+      "rank": 153,
+      "name": "Dinamo-Minsk",
+      "score": 6.5
+    },
+    {
+      "rank": 153,
+      "name": "Neftchi",
+      "score": 6.5
+    },
+    {
+      "rank": 153,
+      "name": "Panevėžys",
+      "score": 6.5
+    },
+    {
+      "rank": 153,
+      "name": "Vllaznia",
+      "score": 6.5
+    },
+    {
+      "rank": 159,
+      "name": "Motherwell",
+      "score": 6.41
+    },
+    {
+      "rank": 160,
+      "name": "DAC 1904",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "Hammarby",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "Kauno Žalgiris",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "La Fiorita",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "Sabah",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "Sutjeska",
+      "score": 6.0
+    },
+    {
+      "rank": 160,
+      "name": "Víkingur",
+      "score": 6.0
+    },
+    {
+      "rank": 167,
+      "name": "GAIS",
+      "score": 5.925
+    },
+    {
+      "rank": 167,
+      "name": "IFK Göteborg",
+      "score": 5.925
+    },
+    {
+      "rank": 167,
+      "name": "Mjällby",
+      "score": 5.925
+    },
+    {
+      "rank": 170,
+      "name": "Varaždin",
+      "score": 5.631
+    },
+    {
+      "rank": 171,
+      "name": "BATE",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Beitar",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Dečić",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Dila",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "H. Tel-Aviv",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Vojvodina",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Zire",
+      "score": 5.5
+    },
+    {
+      "rank": 171,
+      "name": "Žilina",
+      "score": 5.5
+    },
+    {
+      "rank": 179,
+      "name": "Debrecen",
+      "score": 5.437
+    },
+    {
+      "rank": 179,
+      "name": "Győri ETO",
+      "score": 5.437
+    },
+    {
+      "rank": 179,
+      "name": "Paksi",
+      "score": 5.437
+    },
+    {
+      "rank": 182,
+      "name": "LNZ Cherkasy",
+      "score": 5.182
+    },
+    {
+      "rank": 182,
+      "name": "Polissya",
+      "score": 5.182
+    },
+    {
+      "rank": 184,
+      "name": "Ž. Pančevo",
+      "score": 5.15
+    },
+    {
+      "rank": 185,
+      "name": "U. Cluj",
+      "score": 5.05
+    },
+    {
+      "rank": 186,
+      "name": "Alashkert",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "At. Escaldes",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "Dinamo Tbilisi",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "Iberia Tbilisi",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "Santa Coloma",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "Sarajevo",
+      "score": 5.0
+    },
+    {
+      "rank": 186,
+      "name": "St Joseph's",
+      "score": 5.0
+    },
+    {
+      "rank": 193,
+      "name": "Aluminij",
+      "score": 4.893
+    },
+    {
+      "rank": 193,
+      "name": "Bravo",
+      "score": 4.893
+    },
+    {
+      "rank": 193,
+      "name": "Koper",
+      "score": 4.893
+    },
+    {
+      "rank": 196,
+      "name": "Auda",
+      "score": 4.5
+    },
+    {
+      "rank": 196,
+      "name": "Egnatia",
+      "score": 4.5
+    },
+    {
+      "rank": 196,
+      "name": "Torpedo Kutaisi",
+      "score": 4.5
+    },
+    {
+      "rank": 196,
+      "name": "Valur",
+      "score": 4.5
+    },
+    {
+      "rank": 196,
+      "name": "Velež",
+      "score": 4.5
+    },
+    {
+      "rank": 196,
+      "name": "Zimbru",
+      "score": 4.5
+    },
+    {
+      "rank": 202,
+      "name": "CSKA 1948",
+      "score": 4.212
+    },
+    {
+      "rank": 203,
+      "name": "Derry",
+      "score": 4.0
+    },
+    {
+      "rank": 203,
+      "name": "Floriana",
+      "score": 4.0
+    },
+    {
+      "rank": 203,
+      "name": "Liepāja",
+      "score": 4.0
+    },
+    {
+      "rank": 203,
+      "name": "Shelbourne",
+      "score": 4.0
+    },
+    {
+      "rank": 203,
+      "name": "Virtus",
+      "score": 4.0
+    },
+    {
+      "rank": 208,
+      "name": "Connah's Quay",
+      "score": 3.5
+    },
+    {
+      "rank": 208,
+      "name": "Ilves",
+      "score": 3.5
+    },
+    {
+      "rank": 210,
+      "name": "Bohemians",
+      "score": 3.468
+    },
+    {
+      "rank": 211,
+      "name": "Stjarnan",
+      "score": 3.304
+    },
+    {
+      "rank": 211,
+      "name": "Vestri",
+      "score": 3.304
+    },
+    {
+      "rank": 213,
+      "name": "Europa",
+      "score": 3.0
+    },
+    {
+      "rank": 214,
+      "name": "Inter Turku",
+      "score": 2.8
+    },
+    {
+      "rank": 215,
+      "name": "Dukagjini",
+      "score": 2.797
+    },
+    {
+      "rank": 215,
+      "name": "Malisheva",
+      "score": 2.797
+    },
+    {
+      "rank": 217,
+      "name": "Elimai",
+      "score": 2.75
+    },
+    {
+      "rank": 218,
+      "name": "Dinamo City",
+      "score": 2.5
+    },
+    {
+      "rank": 218,
+      "name": "Tre Fiori",
+      "score": 2.5
+    },
+    {
+      "rank": 218,
+      "name": "UNA Strassen",
+      "score": 2.5
+    },
+    {
+      "rank": 221,
+      "name": "Glentoran",
+      "score": 2.0
+    },
+    {
+      "rank": 221,
+      "name": "Hegelmann",
+      "score": 2.0
+    },
+    {
+      "rank": 221,
+      "name": "Mornar",
+      "score": 2.0
+    },
+    {
+      "rank": 221,
+      "name": "Penybont",
+      "score": 2.0
+    },
+    {
+      "rank": 221,
+      "name": "Runavík",
+      "score": 2.0
+    },
+    {
+      "rank": 221,
+      "name": "Sileks",
+      "score": 2.0
+    },
+    {
+      "rank": 227,
+      "name": "Marsaxlokk",
+      "score": 1.8
+    },
+    {
+      "rank": 227,
+      "name": "Valletta",
+      "score": 1.8
+    },
+    {
+      "rank": 229,
+      "name": "Kalju",
+      "score": 1.641
+    },
+    {
+      "rank": 230,
+      "name": "ElbasanI",
+      "score": 1.625
+    },
+    {
+      "rank": 231,
+      "name": "Vardar",
+      "score": 1.551
+    },
+    {
+      "rank": 232,
+      "name": "Caernarfon",
+      "score": 1.5
+    },
+    {
+      "rank": 233,
+      "name": "Coleraine",
+      "score": 1.45
+    },
+    {
+      "rank": 234,
+      "name": "Atert Bissen",
+      "score": 1.325
+    },
+    {
+      "rank": 234,
+      "name": "ML Vitebsk",
+      "score": 1.325
+    },
+    {
+      "rank": 234,
+      "name": "Mondorf",
+      "score": 1.325
+    },
+    {
+      "rank": 237,
+      "name": "Petrovac",
+      "score": 1.316
+    }
+  ]
+}
