@@ -78,10 +78,18 @@ def extract(html, competition):
         keys.add(key)
     return matches
 def audit(existing,source):
-    indexed={(x["date"],norm(x["home"]),norm(x["away"])):x for x in existing}
-    verified=[]; conflicts=[]; missing=[]; result_updates=[]; archive_only=[]; matched=set()
+    indexed={}
+    for row in existing:
+        key=(row["date"],norm(row["home"]),norm(row["away"]))
+        if key in indexed:
+            raise ValueError(f"duplicate archive fixture: {key}")
+        indexed[key]=row
+    verified=[]; conflicts=[]; missing=[]; result_updates=[]; archive_only=[]; matched=set(); source_keys=set()
     for row in source:
         key=(row["date"],norm(row["home"]),norm(row["away"]))
+        if key in source_keys:
+            raise ValueError(f"duplicate source fixture: {key}")
+        source_keys.add(key)
         prior=indexed.get(key)
         if prior is not None: matched.add(key)
         if prior is None:
