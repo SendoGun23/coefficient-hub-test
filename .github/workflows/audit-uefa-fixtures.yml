@@ -1,0 +1,29 @@
+name: Audit UEFA match sources (read only)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 7 * * *'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check beautifulsoup4
+      - name: Test offline reconciliation logic
+        run: python -m unittest discover -s tests -p 'test_uefa_audit.py' -v
+      - name: Compare published archive with UEFA news articles
+        run: python scripts/audit_uefa_fixtures.py --output uefa-fixture-audit.json
+      - name: Save audit for review, even if sources fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: uefa-fixture-audit
+          path: uefa-fixture-audit.json
+          if-no-files-found: warn
+          retention-days: 14
