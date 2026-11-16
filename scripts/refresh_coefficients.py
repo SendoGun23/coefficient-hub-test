@@ -49,7 +49,7 @@ def extract_countries(html):
         if len(row) < 8:
             continue
         # Rank may include a movement indicator: "10 ▲2", "12 ▼2".
-        match = re.match(r"^(\\d{1,2})(?:\\s|$|\\.)", row[0])
+        match = re.match(r"^(\\d{1,2})(?!\\d)", row[0])
         if not match:
             continue
         rank = int(match.group(1))
