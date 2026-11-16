@@ -69,23 +69,33 @@ def extract(html, competition):
     if len(matches)<30: raise ValueError(f"{competition}: too few parseable matches ({len(matches)})")
     keys=set()
     for row in matches:
+        if not row["home"].strip() or not row["away"].strip() or norm(row["home"])==norm(row["away"]):
+            raise ValueError(f"{competition}: invalid teams")
+        if row["status"]=="finished" and (row["hg"]>30 or row["ag"]>30):
+            raise ValueError(f"{competition}: implausible score")
         key=(row["date"],norm(row["home"]),norm(row["away"]))
         if key in keys: raise ValueError(f"{competition}: duplicate source match {key}")
         keys.add(key)
     return matches
 def audit(existing,source):
     indexed={(x["date"],norm(x["home"]),norm(x["away"])):x for x in existing}
-    verified=[]; conflicts=[]; missing=[]
+    verified=[]; conflicts=[]; missing=[]; result_updates=[]; archive_only=[]; matched=set()
     for row in source:
         key=(row["date"],norm(row["home"]),norm(row["away"]))
         prior=indexed.get(key)
+        if prior is not None: matched.add(key)
         if prior is None:
             missing.append(row)
         elif prior["status"]==row["status"] and (prior["status"]!="finished" or (prior["hg"],prior["ag"])==(row["hg"],row["ag"])):
             verified.append(key)
+        elif prior["status"]=="scheduled" and row["status"]=="finished":
+            result_updates.append({"existing":prior,"source":row})
         else:
             conflicts.append({"existing":prior,"source":row})
-    return {"verified":len(verified),"conflicts":conflicts,"not_in_archive":missing,"source_count":len(source)}
+    archive_only=[x for key,x in indexed.items() if key not in matched]
+    return {"verified":len(verified),"pending_results":result_updates,"conflicts":conflicts,
+            "not_in_archive":missing,"not_in_source":archive_only,"source_count":len(source),
+            "archive_count":len(existing)}
 def fetch(url):
     req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; CoefficientHubAudit/1.0)","Accept":"text/html"})
     with urllib.request.urlopen(req,timeout=25) as response:
@@ -104,6 +114,7 @@ def main():
             existing=[x for x in archive["rows"] if x["season"]=="2026/27" and x["competition"]==comp]
             result["competitions"][comp]=audit(existing,extracted)
             print(f"{comp}: {result['competitions'][comp]['verified']} confirmed; "
+                  f"{len(result['competitions'][comp]['pending_results'])} result updates for review; "
                   f"{len(result['competitions'][comp]['conflicts'])} conflicts; "
                   f"{len(result['competitions'][comp]['not_in_archive'])} missing")
         except Exception as exc:
