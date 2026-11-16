@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "v2" / "data"
 SOURCES = {
-    "countries": "https://coeffarchive.com/",
+    "countries": "https://www.uefa.com/nationalassociations/uefarankings/country/",
     "clubs": "https://eurocoeff.com/en/rankings/clubs/",
 }
 ALIASES = {
@@ -43,25 +43,57 @@ def rows(html):
             if cells:
                 yield [clean(cell.get_text(" ", strip=True)) for cell in cells]
 def extract_countries(html):
+    """Parse official UEFA five-season rows; reject anything short of all 55."""
     found = {}
     for row in rows(html):
-        if len(row) < 8:
+        if len(row) < 7:
             continue
-        try:
-            rank = int(row[0].strip().rstrip("."))
-            # Expected table: rank, association, total, 22/23, 23/24, 24/25, 25/26, season, clubs
-            name = ALIASES.get(row[1], row[1])
-            total = number(row[2])
-            seasons = [number(v) for v in row[3:8]]
-        except (ValueError, IndexError):
+        # UEFA renders columns in different orders across its desktop/mobile views.
+        rank = None
+        rank_idx = None
+        for i in range(min(3, len(row))):
+            m = re.fullmatch(r"(?:Pos\\s*)?(\\d{1,2})\\.?", row[i], re.I)
+            if m and 1 <= int(m.group(1)) <= 55:
+                rank = int(m.group(1))
+                rank_idx = i
+                break
+        if rank is None:
             continue
-        if not 1 <= rank <= 55 or not 0 < total < 150 or len(seasons) != 5:
+        # Association name is the first non-numeric, non-header cell after rank.
+        name = None
+        name_idx = None
+        for i in range(rank_idx + 1, min(len(row), rank_idx + 5)):
+            candidate = clean(row[i])
+            if re.fullmatch(r"[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ .&'’()\\-]{2,65}", candidate):
+                name = ALIASES.get(candidate, candidate)
+                name_idx = i
+                break
+        if name is None:
             continue
-        if abs(sum(seasons) - total) > 0.012:
+        values = []
+        for cell in row[name_idx + 1:]:
+            candidate = clean(cell).replace(",", "")
+            if re.fullmatch(r"\\d{1,3}(?:\\.\\d{1,3})?", candidate):
+                values.append(float(candidate))
+        if len(values) < 6:
             continue
-        found[name] = {"rank": rank, "name": name, "score": round(total, 3), "seasons": seasons}
-    if len(found) != 55 or sorted(x["rank"] for x in found.values()) != list(range(1, 56)):
-        raise ValueError(f"Expected 55 unique, sequential, internally consistent associations; got {len(found)}")
+        # Find five consecutive season coefficients whose sum equals a total
+        # elsewhere in the row. Reject ambiguity and unexpected layouts.
+        matches = []
+        for start in range(len(values) - 4):
+            seasons = values[start:start + 5]
+            for total in values[:start] + values[start + 5:]:
+                if 0 < total < 150 and abs(sum(seasons) - total) <= 0.012:
+                    matches.append((round(total, 3), seasons))
+        if len(matches) != 1:
+            continue
+        total, seasons = matches[0]
+        if name in found and found[name]["rank"] != rank:
+            raise ValueError(f"Conflicting ranks for {name}")
+        found[name] = {"rank": rank, "name": name, "score": total, "seasons": seasons}
+    ranks = sorted(x["rank"] for x in found.values())
+    if len(found) != 55 or ranks != list(range(1, 56)):
+        raise ValueError(f"Official UEFA table parser found {len(found)}/55 associations. Missing ranks: {sorted(set(range(1,56))-set(ranks))}; existing snapshot preserved")
     return sorted(found.values(), key=lambda x: x["rank"])
 def extract_clubs(html):
     found = {}
