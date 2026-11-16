@@ -18,6 +18,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCES = {
     "UCL": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-uefa-champions-league-all-the-league-phase-fix/",
     "UEL": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-results/",
+    "UECL": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-league-phase-fixtures/",
 }
 MONTHS = {"september":9,"october":10,"november":11,"december":12,"january":1,
           "february":2,"march":3,"april":4,"may":5,"june":6,"july":7,"august":8}
@@ -45,6 +46,9 @@ def extract(html, competition):
     lines=[re.sub(r"\s+"," ",x).strip() for x in main.get_text("\n").splitlines()]
     current=None; matches=[]
     for line in lines:
+        # Articles can repeat fixtures in a later by-team section; stop there.
+        if line.casefold() in {"league phase fixtures by team", "fixtures by team"} and matches:
+            break
         m=DATE.fullmatch(line)
         if m:
             day,month,year=m.groups()
