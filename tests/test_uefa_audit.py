@@ -60,6 +60,14 @@ class UefaAuditTests(unittest.TestCase):
             rows.append(f"<p>Tuesday {i} November 2026</p><p>Club A 31-0 Club B</p><p>Club C vs Club D</p>")
         with self.assertRaises(ValueError):
             extract("<article>"+"".join(rows)+"</article>","UCL")
+    def test_duplicate_archive_is_rejected(self):
+        game=dict(date="2026-11-24",home="Ajax",away="Roma",hg=None,ag=None,status="scheduled")
+        with self.assertRaisesRegex(ValueError,"duplicate archive"):
+            audit([game,dict(game)],[])
+    def test_duplicate_source_is_rejected(self):
+        game=dict(date="2026-11-24",home="Ajax",away="Roma",hg=2,ag=1,status="finished")
+        with self.assertRaisesRegex(ValueError,"duplicate source"):
+            audit([],[game,dict(game)])
     def test_exact_match(self):
         original=[dict(date="2026-11-03",home="Bayern Munich",away="Roma",hg=2,ag=1,status="finished")]
         source=[dict(date="2026-11-03",home="Bayern München",away="Roma",hg=2,ag=1,status="finished")]
