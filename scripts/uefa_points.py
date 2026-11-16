@@ -40,7 +40,7 @@ def league_rank_bonus(competition, rank):
         return max(Decimal("6"), Decimal("12") - Decimal(rank-1)*Decimal("0.25"))
     if competition == "UEL":
         return max(Decimal("0"), Decimal("6") - Decimal(rank-1)*Decimal("0.25"))
-    return max(Decimal("0"), Decimal("4") - Decimal(rank-1)*Decimal("0.125") if rank>=9 else Decimal("4") - Decimal(rank-1)*Decimal("0.25"))
+    return max(Decimal("0"), Decimal("2") - Decimal(rank-9)*Decimal("0.125") if rank>=9 else Decimal("4") - Decimal(rank-1)*Decimal("0.25"))
 
 def knockout_round_bonus(competition, round_name):
     if competition not in {"UCL","UEL","UECL"}:
