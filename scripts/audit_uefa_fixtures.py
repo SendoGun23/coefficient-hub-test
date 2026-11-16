@@ -103,6 +103,7 @@ def fetch(url):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--output",default="uefa-fixture-audit.json")
+    parser.add_argument("--offline-html-dir",type=pathlib.Path,help="Use saved UCL.html, UEL.html, UECL.html instead of network (reproducible diagnostics)")
     args=parser.parse_args()
     archive=json.loads((ROOT/"v2/data/fixtures.json").read_text(encoding="utf-8"))
     result={"generated_at_utc":dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -110,17 +111,22 @@ def main():
     failed=False
     for comp,url in SOURCES.items():
         try:
-            extracted=extract(fetch(url),comp)
+            html=(args.offline_html_dir / (comp+".html")).read_text(encoding="utf-8") if args.offline_html_dir else fetch(url)
+            extracted=extract(html,comp)
             existing=[x for x in archive["rows"] if x["season"]=="2026/27" and x["competition"]==comp]
             result["competitions"][comp]=audit(existing,extracted)
+            result["competitions"][comp]["source_url"]=url
+            result["competitions"][comp]["verification_status"]="parsed_unverified"
             print(f"{comp}: {result['competitions'][comp]['verified']} confirmed; "
                   f"{len(result['competitions'][comp]['pending_results'])} result updates for review; "
                   f"{len(result['competitions'][comp]['conflicts'])} conflicts; "
                   f"{len(result['competitions'][comp]['not_in_archive'])} missing")
         except Exception as exc:
             failed=True
-            result["competitions"][comp]={"error":str(exc)}
+            result["competitions"][comp]={"error":str(exc),"source_url":url,"verification_status":"failed"}
             print(f"{comp}: source unavailable or format changed: {exc}",file=sys.stderr)
-    pathlib.Path(args.output).write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    output=pathlib.Path(args.output)
+    output.parent.mkdir(parents=True,exist_ok=True)
+    output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     return 1 if failed else 0
 if __name__=="__main__": sys.exit(main())
