@@ -88,6 +88,29 @@ def extract_clubs(html):
     if len(found) < 100:
         raise ValueError(f"Expected at least 100 clubs, got {len(found)}")
     return sorted(found.values(), key=lambda x: (x["rank"], x["name"]))
+def validate_snapshot(kind, data):
+    if kind == "countries":
+        if len(data) != 55 or sorted(r["rank"] for r in data) != list(range(1, 56)):
+            raise ValueError("Country ranks are incomplete or duplicated")
+        if len({r["name"] for r in data}) != 55:
+            raise ValueError("Duplicate country names")
+        for row in data:
+            values = row["seasons"]
+            if len(values) != 5 or any(not 0 <= v < 50 for v in values):
+                raise ValueError("Invalid country season values: " + row["name"])
+            if abs(sum(values) - row["score"]) > 0.012:
+                raise ValueError("Country sum mismatch: " + row["name"])
+        if any(data[i]["score"] < data[i + 1]["score"] - .002 for i in range(54)):
+            raise ValueError("Country ranks are not sorted by score")
+    else:
+        if len(data) < 100 or len({r["name"] for r in data}) != len(data):
+            raise ValueError("Club snapshot incomplete or has duplicate names")
+        if any(not 0 < r["score"] < 250 or not 1 <= r["rank"] <= 1000 for r in data):
+            raise ValueError("Invalid club coefficient")
+        if any(data[i]["score"] < data[i + 1]["score"] - .002 for i in range(len(data)-1)):
+            raise ValueError("Club ranks not sorted by score")
+    return True
+
 def publish(kind, data, source, dry_run):
     payload = {"source": source, "retrieved_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                "verified_by_uefa": False, "status": "third_party_snapshot", "count": len(data), "rows": data}
@@ -109,6 +132,7 @@ def main():
         try:
             html = get(SOURCES[kind])
             data = extract_countries(html) if kind == "countries" else extract_clubs(html)
+            validate_snapshot(kind, data)
             publish(kind, data, SOURCES[kind], args.dry_run)
         except Exception as e:
             failed.append(kind)
