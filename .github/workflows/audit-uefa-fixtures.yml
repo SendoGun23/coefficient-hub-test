@@ -1,5 +1,11 @@
 name: Audit UEFA match sources (read only)
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_uefa_fixtures.py'
+      - 'tests/test_uefa_audit.py'
+      - '.github/workflows/audit-uefa-fixtures.yml'
   workflow_dispatch:
   schedule:
     - cron: '37 7 * * *'
