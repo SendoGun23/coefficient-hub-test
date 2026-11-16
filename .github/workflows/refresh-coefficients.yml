@@ -37,7 +37,7 @@ jobs:
           if [ -f v2/data/countries.json ]; then echo 'Country snapshot: present' >> "$GITHUB_STEP_SUMMARY"; else echo 'Country snapshot: missing' >> "$GITHUB_STEP_SUMMARY"; fi
           if [ -f v2/data/clubs.json ]; then echo 'Club snapshot: present' >> "$GITHUB_STEP_SUMMARY"; else echo 'Club snapshot: missing' >> "$GITHUB_STEP_SUMMARY"; fi
       - name: Commit only validated changes
-        if: always()
+        if: steps.import.outcome == 'success'
         run: |
           git add -A -- v2/data
           if git diff --cached --quiet; then
