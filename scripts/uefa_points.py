@@ -29,3 +29,22 @@ def association_coefficient(points, entrants):
         raise ValueError("positive official entrant count required")
     total=sum((Decimal(str(p)) for p in points),Decimal("0"))
     return (total/Decimal(entrants)).quantize(Decimal("0.001"),rounding=ROUND_DOWN)
+
+# Official Annex D.5 league-phase rank bonuses for 2026/27.
+def league_rank_bonus(competition, rank):
+    if competition not in {"UCL","UEL","UECL"}:
+        raise ValueError("unknown competition")
+    if type(rank) is not int or not 1 <= rank <= 36:
+        raise ValueError("league rank must be 1..36")
+    if competition == "UCL":
+        return max(Decimal("6"), Decimal("12") - Decimal(rank-1)*Decimal("0.25"))
+    if competition == "UEL":
+        return max(Decimal("0"), Decimal("6") - Decimal(rank-1)*Decimal("0.25"))
+    return max(Decimal("0"), Decimal("4") - Decimal(rank-1)*Decimal("0.125") if rank>=9 else Decimal("4") - Decimal(rank-1)*Decimal("0.25"))
+
+def knockout_round_bonus(competition, round_name):
+    if competition not in {"UCL","UEL","UECL"}:
+        raise ValueError("unknown competition")
+    if round_name not in {"ROUND_OF_16","QUARTER_FINAL","SEMI_FINAL","FINAL"}:
+        raise ValueError("not a bonus-eligible round")
+    return {"UCL":Decimal("1.5"),"UEL":Decimal("1"),"UECL":Decimal("0.5")}[competition]
