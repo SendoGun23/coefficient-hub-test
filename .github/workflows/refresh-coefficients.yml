@@ -19,10 +19,22 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install --disable-pip-version-check beautifulsoup4
       - name: Download and validate snapshots
+        id: import
+        continue-on-error: true
         run: python scripts/refresh_coefficients.py
-      - name: Commit only validated changes
+      - name: Publish diagnostic summary
+        if: always()
         run: |
-          git add v2/data/countries.json v2/data/clubs.json
+          echo '## Coefficient Hub data refresh' >> "$GITHUB_STEP_SUMMARY"
+          echo "Import outcome: ${{ steps.import.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          echo 'Source configuration: scripts/refresh_coefficients.py' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Snapshots are published only after full validation.' >> "$GITHUB_STEP_SUMMARY"
+          if [ -f v2/data/countries.json ]; then echo 'Country snapshot: present' >> "$GITHUB_STEP_SUMMARY"; else echo 'Country snapshot: missing' >> "$GITHUB_STEP_SUMMARY"; fi
+          if [ -f v2/data/clubs.json ]; then echo 'Club snapshot: present' >> "$GITHUB_STEP_SUMMARY"; else echo 'Club snapshot: missing' >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Commit only validated changes
+        if: steps.import.outcome == 'success'
+        run: |
+          git add -A -- v2/data
           if git diff --cached --quiet; then
             echo "No validated changes"
             exit 0
@@ -31,3 +43,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: refresh validated third-party coefficient snapshots"
           git push
+
