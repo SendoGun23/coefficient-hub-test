@@ -131,6 +131,10 @@ def main():
             overlap=comparison["verified"]+len(comparison["pending_results"])+len(comparison["conflicts"])
             if overlap==0:
                 raise ValueError(f"{comp}: no fixture identity overlap with archive; source or parser must be reviewed")
+            # The archive is explicitly incomplete. Require meaningful identity coverage
+            # of the parsed source, rather than accepting one coincidental match.
+            if overlap < max(5, int(len(extracted)*0.10)):
+                raise ValueError(f"{comp}: insufficient identity overlap ({overlap}/{len(extracted)}); review source and aliases")
             result["competitions"][comp]=comparison
             result["competitions"][comp]["source_url"]=url
             result["competitions"][comp]["verification_status"]="parsed_unverified"
