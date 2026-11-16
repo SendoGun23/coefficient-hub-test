@@ -68,6 +68,17 @@ class UefaAuditTests(unittest.TestCase):
         game=dict(date="2026-11-24",home="Ajax",away="Roma",hg=2,ag=1,status="finished")
         with self.assertRaisesRegex(ValueError,"duplicate source"):
             audit([],[game,dict(game)])
+    def test_malformed_calendar_date_does_not_crash_parser(self):
+        rows=["<p>Tuesday 31 February 2026</p><p>Wrong 1-0 Date</p>"]
+        for i in range(1,19):
+            rows.append(f"<p>Tuesday {i} November 2026</p><p>Club A 1-0 Club B</p><p>Club C vs Club D</p>")
+        self.assertEqual(len(extract("<article>"+"".join(rows)+"</article>","UCL")),36)
+    def test_large_score_cannot_be_truncated(self):
+        rows=[]
+        for i in range(1,19):
+            rows.append(f"<p>Tuesday {i} November 2026</p><p>Club A 100-0 Club B</p><p>Club C vs Club D</p>")
+        with self.assertRaises(ValueError):
+            extract("<article>"+"".join(rows)+"</article>","UCL")
     def test_exact_match(self):
         original=[dict(date="2026-11-03",home="Bayern Munich",away="Roma",hg=2,ag=1,status="finished")]
         source=[dict(date="2026-11-03",home="Bayern München",away="Roma",hg=2,ag=1,status="finished")]
