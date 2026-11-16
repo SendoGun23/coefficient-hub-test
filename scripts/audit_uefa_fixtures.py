@@ -122,7 +122,12 @@ def main():
             html=(args.offline_html_dir / (comp+".html")).read_text(encoding="utf-8") if args.offline_html_dir else fetch(url)
             extracted=extract(html,comp)
             existing=[x for x in archive["rows"] if x["season"]=="2026/27" and x["competition"]==comp]
-            result["competitions"][comp]=audit(existing,extracted)
+            comparison=audit(existing,extracted)
+            # A parseable but unrelated article is not evidence of correct UEFA fixtures.
+            overlap=comparison["verified"]+len(comparison["pending_results"])+len(comparison["conflicts"])
+            if overlap==0:
+                raise ValueError(f"{comp}: no fixture identity overlap with archive; source or parser must be reviewed")
+            result["competitions"][comp]=comparison
             result["competitions"][comp]["source_url"]=url
             result["competitions"][comp]["verification_status"]="parsed_unverified"
             print(f"{comp}: {result['competitions'][comp]['verified']} confirmed; "
