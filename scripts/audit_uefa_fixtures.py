@@ -23,7 +23,7 @@ SOURCES = {
 MONTHS = {"september":9,"october":10,"november":11,"december":12,"january":1,
           "february":2,"march":3,"april":4,"may":5,"june":6,"july":7,"august":8}
 DATE = re.compile(r"^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})$",re.I)
-SCORE = re.compile(r"^(.+?)\s+(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(.+?)$")
+SCORE = re.compile(r"^(.+?)\s+(\d+)\s*[-–]\s*(\d+)\s+(.+?)$")
 SCHEDULED = re.compile(r"^(.+?)\s+vs\s+(.+?)(?:\s*\(\d{1,2}:\d{2}\))?$",re.I)
 ALIASES = {"atletico de madrid":"atletico de madrid","atletico madrid":"atletico de madrid",
            "bayern munchen":"bayern munchen","bayern munich":"bayern munchen",
@@ -53,9 +53,13 @@ def extract(html, competition):
         if m:
             day,month,year=m.groups()
             month_num=MONTHS.get(month.lower())
-            current=dt.date(int(year),month_num,int(day)).isoformat() if month_num else None
+            try:
+                current=dt.date(int(year),month_num,int(day)).isoformat() if month_num else None
+            except ValueError:
+                current=None
             continue
         if not current: continue
+        if line.casefold().startswith(("matchday ", "group ", "league phase", "round of ", "fixtures by ")): continue
         m=SCORE.fullmatch(line)
         if m:
             home,hg,ag,away=m.groups()
