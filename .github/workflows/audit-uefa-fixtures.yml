@@ -19,6 +19,28 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_uefa_audit.py' -v
       - name: Compare published archive with UEFA news articles
         run: python scripts/audit_uefa_fixtures.py --output uefa-fixture-audit.json
+      - name: Publish readable audit summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          output=Path("uefa-fixture-audit.json")
+          with open(__import__("os").environ["GITHUB_STEP_SUMMARY"],"a",encoding="utf-8") as f:
+              f.write("## UEFA fixture reconciliation (read-only)\\n\\n")
+              if not output.exists():
+                  f.write("No report was generated. Check job logs.\\n")
+              else:
+                  data=json.loads(output.read_text(encoding="utf-8"))
+                  f.write("| Competition | Confirmed | New final scores | Conflicts | Missing archive | Missing source |\\n")
+                  f.write("|---|---:|---:|---:|---:|---:|\\n")
+                  for name,entry in data["competitions"].items():
+                      if "error" in entry:
+                          f.write(f"| {name} | ERROR | — | — | — | — |\\n")
+                      else:
+                          f.write(f"| {name} | {entry['verified']} | {len(entry['pending_results'])} | {len(entry['conflicts'])} | {len(entry['not_in_archive'])} | {len(entry['not_in_source'])} |\\n")
+                  f.write("\\nSource parsing errors mean **no verification**, not zero discrepancies. No published data is modified.\\n")
+          PY
       - name: Save audit for review, even if sources fail
         if: always()
         uses: actions/upload-artifact@v4
