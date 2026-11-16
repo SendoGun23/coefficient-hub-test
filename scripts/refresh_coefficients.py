@@ -127,16 +127,26 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--kind", choices=["countries", "clubs", "all"], default="all")
     args = parser.parse_args()
+    kinds = ["countries", "clubs"] if args.kind == "all" else [args.kind]
+    pending = {}
     failed = []
-    for kind in (["countries", "clubs"] if args.kind == "all" else [args.kind]):
+    for kind in kinds:
         try:
             html = get(SOURCES[kind])
             data = extract_countries(html) if kind == "countries" else extract_clubs(html)
             validate_snapshot(kind, data)
-            publish(kind, data, SOURCES[kind], args.dry_run)
-        except Exception as e:
+            pending[kind] = data
+            print(f"Validated {kind}: {len(data)} rows", flush=True)
+        except Exception as exc:
             failed.append(kind)
-            print(f"ERROR {kind}: {e}; existing snapshot preserved", file=sys.stderr)
-    return 1 if failed else 0
+            print(f"ERROR {kind}: {exc}; no snapshots modified", file=sys.stderr)
+    # An all-sources refresh is transactional: never publish only one side.
+    if failed:
+        print("No files published because the refresh was incomplete", file=sys.stderr)
+        return 1
+    for kind, data in pending.items():
+        publish(kind, data, SOURCES[kind], args.dry_run)
+    return 0
+
 if __name__ == "__main__":
     sys.exit(main())
