@@ -1,0 +1,669 @@
+{
+  "source": "https://coeffarchive.com/",
+  "retrieved_at_utc": "2026-11-16T17:47:37+00:00",
+  "verified_by_uefa": false,
+  "status": "third_party_snapshot",
+  "count": 55,
+  "rows": [
+    {
+      "rank": 1,
+      "name": "England",
+      "score": 107.685,
+      "seasons": [
+        23.0,
+        17.375,
+        29.464,
+        28.68,
+        9.166
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Italy",
+      "score": 91.732,
+      "seasons": [
+        22.357,
+        21.0,
+        21.875,
+        19.0,
+        7.5
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Spain",
+      "score": 86.493,
+      "seasons": [
+        16.571,
+        16.062,
+        23.892,
+        22.093,
+        7.875
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Germany",
+      "score": 84.973,
+      "seasons": [
+        17.125,
+        19.357,
+        18.421,
+        21.785,
+        8.285
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "France",
+      "score": 72.296,
+      "seasons": [
+        12.583,
+        16.25,
+        17.928,
+        18.321,
+        7.214
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Portugal",
+      "score": 69.15,
+      "seasons": [
+        12.5,
+        11.0,
+        16.25,
+        20.5,
+        8.9
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Belgium",
+      "score": 64.05,
+      "seasons": [
+        14.2,
+        14.4,
+        15.65,
+        11.4,
+        8.4
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Netherlands",
+      "score": 56.395,
+      "seasons": [
+        13.5,
+        10.0,
+        15.25,
+        9.979,
+        7.666
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Turkey",
+      "score": 53.075,
+      "seasons": [
+        11.8,
+        12.0,
+        10.3,
+        11.075,
+        7.9
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "Greece",
+      "score": 47.612,
+      "seasons": [
+        2.125,
+        11.4,
+        12.687,
+        14.2,
+        7.2
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "Czech Republic",
+      "score": 46.325,
+      "seasons": [
+        6.75,
+        13.5,
+        10.55,
+        11.025,
+        4.5
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "Poland",
+      "score": 45.725,
+      "seasons": [
+        7.75,
+        6.875,
+        11.75,
+        15.75,
+        3.6
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "Norway",
+      "score": 41.012,
+      "seasons": [
+        5.75,
+        8.0,
+        11.812,
+        8.05,
+        7.4
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "Denmark",
+      "score": 40.806,
+      "seasons": [
+        5.9,
+        8.5,
+        7.656,
+        12.25,
+        6.5
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "Cyprus",
+      "score": 35.443,
+      "seasons": [
+        5.1,
+        3.75,
+        10.562,
+        12.156,
+        3.875
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "Switzerland",
+      "score": 32.2,
+      "seasons": [
+        8.5,
+        5.2,
+        7.05,
+        6.2,
+        5.25
+      ]
+    },
+    {
+      "rank": 17,
+      "name": "Austria",
+      "score": 29.65,
+      "seasons": [
+        4.9,
+        4.8,
+        9.65,
+        4.1,
+        6.2
+      ]
+    },
+    {
+      "rank": 18,
+      "name": "Hungary",
+      "score": 29.312,
+      "seasons": [
+        5.875,
+        4.5,
+        6.625,
+        7.437,
+        4.875
+      ]
+    },
+    {
+      "rank": 19,
+      "name": "Croatia",
+      "score": 27.906,
+      "seasons": [
+        3.375,
+        5.875,
+        5.875,
+        7.031,
+        5.75
+      ]
+    },
+    {
+      "rank": 20,
+      "name": "Sweden",
+      "score": 27.0,
+      "seasons": [
+        6.25,
+        1.875,
+        11.375,
+        5.0,
+        2.5
+      ]
+    },
+    {
+      "rank": 21,
+      "name": "Scotland",
+      "score": 26.85,
+      "seasons": [
+        3.5,
+        6.4,
+        9.25,
+        5.0,
+        2.7
+      ]
+    },
+    {
+      "rank": 22,
+      "name": "Romania",
+      "score": 26.125,
+      "seasons": [
+        6.25,
+        3.25,
+        7.75,
+        5.75,
+        3.125
+      ]
+    },
+    {
+      "rank": 23,
+      "name": "Ukraine",
+      "score": 24.837,
+      "seasons": [
+        5.7,
+        4.1,
+        3.6,
+        8.312,
+        3.125
+      ]
+    },
+    {
+      "rank": 24,
+      "name": "Azerbaijan",
+      "score": 24.187,
+      "seasons": [
+        4.0,
+        5.875,
+        2.875,
+        5.812,
+        5.625
+      ]
+    },
+    {
+      "rank": 25,
+      "name": "Israel",
+      "score": 24.125,
+      "seasons": [
+        6.25,
+        8.75,
+        2.875,
+        2.875,
+        3.375
+      ]
+    },
+    {
+      "rank": 26,
+      "name": "Slovenia",
+      "score": 23.593,
+      "seasons": [
+        2.125,
+        3.875,
+        9.093,
+        6.375,
+        2.125
+      ]
+    },
+    {
+      "rank": 27,
+      "name": "Slovakia",
+      "score": 22.375,
+      "seasons": [
+        6.0,
+        5.0,
+        4.625,
+        2.625,
+        4.125
+      ]
+    },
+    {
+      "rank": 28,
+      "name": "Bulgaria",
+      "score": 22.062,
+      "seasons": [
+        4.5,
+        4.375,
+        3.625,
+        5.187,
+        4.375
+      ]
+    },
+    {
+      "rank": 29,
+      "name": "Serbia",
+      "score": 19.0,
+      "seasons": [
+        5.375,
+        1.4,
+        3.725,
+        5.75,
+        2.75
+      ]
+    },
+    {
+      "rank": 30,
+      "name": "Russia",
+      "score": 17.332,
+      "seasons": [
+        4.333,
+        4.333,
+        4.333,
+        4.333,
+        0.0
+      ]
+    },
+    {
+      "rank": 31,
+      "name": "Iceland",
+      "score": 17.02,
+      "seasons": [
+        3.0,
+        3.833,
+        4.562,
+        3.625,
+        2.0
+      ]
+    },
+    {
+      "rank": 32,
+      "name": "Republic of Ireland",
+      "score": 16.343,
+      "seasons": [
+        3.375,
+        1.5,
+        5.343,
+        4.25,
+        1.875
+      ]
+    },
+    {
+      "rank": 33,
+      "name": "Armenia",
+      "score": 15.812,
+      "seasons": [
+        2.375,
+        2.25,
+        4.375,
+        4.187,
+        2.625
+      ]
+    },
+    {
+      "rank": 34,
+      "name": "Latvia",
+      "score": 14.625,
+      "seasons": [
+        2.75,
+        1.625,
+        3.875,
+        2.0,
+        4.375
+      ]
+    },
+    {
+      "rank": 35,
+      "name": "Bosnia & Herzegovina",
+      "score": 14.468,
+      "seasons": [
+        2.0,
+        2.25,
+        4.531,
+        3.312,
+        2.375
+      ]
+    },
+    {
+      "rank": 36,
+      "name": "Kosovo",
+      "score": 14.031,
+      "seasons": [
+        2.875,
+        3.0,
+        2.0,
+        3.781,
+        2.375
+      ]
+    },
+    {
+      "rank": 37,
+      "name": "Finland",
+      "score": 13.875,
+      "seasons": [
+        2.625,
+        1.75,
+        2.25,
+        3.625,
+        3.625
+      ]
+    },
+    {
+      "rank": 38,
+      "name": "Kazakhstan",
+      "score": 12.875,
+      "seasons": [
+        1.125,
+        3.125,
+        3.0,
+        3.625,
+        2.0
+      ]
+    },
+    {
+      "rank": 39,
+      "name": "Liechtenstein",
+      "score": 11.0,
+      "seasons": [
+        6.5,
+        0.5,
+        0.5,
+        1.0,
+        2.5
+      ]
+    },
+    {
+      "rank": 40,
+      "name": "Moldova",
+      "score": 10.25,
+      "seasons": [
+        3.75,
+        2.0,
+        2.125,
+        1.5,
+        0.875
+      ]
+    },
+    {
+      "rank": 41,
+      "name": "Faroe Islands",
+      "score": 9.875,
+      "seasons": [
+        2.25,
+        2.75,
+        1.5,
+        1.75,
+        1.625
+      ]
+    },
+    {
+      "rank": 42,
+      "name": "Albania",
+      "score": 9.5,
+      "seasons": [
+        0.875,
+        2.125,
+        1.25,
+        2.25,
+        3.0
+      ]
+    },
+    {
+      "rank": 43,
+      "name": "North Macedonia",
+      "score": 8.967,
+      "seasons": [
+        1.625,
+        1.5,
+        0.666,
+        3.343,
+        1.833
+      ]
+    },
+    {
+      "rank": 44,
+      "name": "Belarus",
+      "score": 8.708,
+      "seasons": [
+        0.625,
+        1.75,
+        1.875,
+        2.125,
+        2.333
+      ]
+    },
+    {
+      "rank": 45,
+      "name": "Lithuania",
+      "score": 8.125,
+      "seasons": [
+        2.375,
+        1.125,
+        1.375,
+        1.125,
+        2.125
+      ]
+    },
+    {
+      "rank": 46,
+      "name": "Gibraltar",
+      "score": 7.874,
+      "seasons": [
+        0.875,
+        0.166,
+        1.5,
+        3.333,
+        2.0
+      ]
+    },
+    {
+      "rank": 47,
+      "name": "Andorra",
+      "score": 7.832,
+      "seasons": [
+        0.666,
+        1.666,
+        1.0,
+        2.0,
+        2.5
+      ]
+    },
+    {
+      "rank": 48,
+      "name": "Malta",
+      "score": 7.625,
+      "seasons": [
+        2.625,
+        1.5,
+        1.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "rank": 49,
+      "name": "Estonia",
+      "score": 7.041,
+      "seasons": [
+        1.166,
+        0.125,
+        1.625,
+        1.625,
+        2.5
+      ]
+    },
+    {
+      "rank": 50,
+      "name": "Georgia",
+      "score": 6.75,
+      "seasons": [
+        1.125,
+        1.25,
+        1.25,
+        1.125,
+        2.0
+      ]
+    },
+    {
+      "rank": 51,
+      "name": "Northern Ireland",
+      "score": 6.625,
+      "seasons": [
+        1.25,
+        1.125,
+        1.5,
+        1.75,
+        1.0
+      ]
+    },
+    {
+      "rank": 52,
+      "name": "Luxembourg",
+      "score": 6.25,
+      "seasons": [
+        1.125,
+        2.25,
+        1.25,
+        0.75,
+        0.875
+      ]
+    },
+    {
+      "rank": 53,
+      "name": "Montenegro",
+      "score": 5.833,
+      "seasons": [
+        1.0,
+        1.333,
+        2.5,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "rank": 54,
+      "name": "Wales",
+      "score": 4.499,
+      "seasons": [
+        1.166,
+        0.625,
+        2.0,
+        0.333,
+        0.375
+      ]
+    },
+    {
+      "rank": 55,
+      "name": "San Marino",
+      "score": 2.998,
+      "seasons": [
+        0.833,
+        0.333,
+        0.666,
+        0.833,
+        0.333
+      ]
+    }
+  ]
+}
