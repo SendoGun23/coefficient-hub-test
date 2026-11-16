@@ -1,0 +1,87 @@
+{
+  "official_source": "https://www.uefa.com/nationalassociations/uefarankings/country/",
+  "official_last_updated": "2026-11-05 21:57",
+  "checked": [
+    {
+      "country": "England",
+      "project_total": "107.685",
+      "official_total": "107.685",
+      "matched": true,
+      "seasons": [
+        "23.000",
+        "17.375",
+        "29.464",
+        "28.680",
+        "9.166"
+      ]
+    },
+    {
+      "country": "Italy",
+      "project_total": "91.732",
+      "official_total": "91.732",
+      "matched": true,
+      "seasons": [
+        "22.357",
+        "21.000",
+        "21.875",
+        "19.000",
+        "7.500"
+      ]
+    },
+    {
+      "country": "Spain",
+      "project_total": "86.493",
+      "official_total": "86.493",
+      "matched": true,
+      "seasons": [
+        "16.571",
+        "16.062",
+        "23.892",
+        "22.093",
+        "7.875"
+      ]
+    },
+    {
+      "country": "Germany",
+      "project_total": "84.973",
+      "official_total": "84.973",
+      "matched": true,
+      "seasons": [
+        "17.125",
+        "19.357",
+        "18.421",
+        "21.785",
+        "8.285"
+      ]
+    },
+    {
+      "country": "Turkey",
+      "project_total": "53.075",
+      "official_total": "53.075",
+      "matched": true,
+      "seasons": [
+        "11.800",
+        "12.000",
+        "10.300",
+        "11.075",
+        "7.900"
+      ]
+    },
+    {
+      "country": "Greece",
+      "project_total": "47.612",
+      "official_total": "47.612",
+      "matched": true,
+      "seasons": [
+        "2.125",
+        "11.400",
+        "12.687",
+        "14.200",
+        "7.200"
+      ]
+    }
+  ],
+  "checked_count": 6,
+  "remaining_unchecked": 49,
+  "note": "Independent comparison of displayed snapshot values only, not independent recomputation from fixtures."
+}

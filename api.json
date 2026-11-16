@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "dataset_status": "partial_unverified",
+    "officially_verified": false,
+    "scope": "UCL 2025/26 league phase matchday 8 only",
+    "source_note": "Transcribed project fixture CSV; independent source audit pending",
+    "matches": 18,
+    "clubs": 36,
+    "generated_at_utc": "2026-11-16T01:47:44.895359+00:00"
+  },
+  "fixtures": [
+    {
+      "id": "2025-26-ucl-r8-01",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Ajax",
+      "away": "Olympiacos",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-02",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Arsenal",
+      "away": "Kairat Almaty",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-03",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Monaco",
+      "away": "Juventus",
+      "home_goals": 0,
+      "away_goals": 0,
+      "home_points": 1,
+      "away_points": 1,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-04",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Athletic Club",
+      "away": "Sporting CP",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-05",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Atlético de Madrid",
+      "away": "Bodø/Glimt",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-06",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Leverkusen",
+      "away": "Villarreal",
+      "home_goals": 3,
+      "away_goals": 0,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-07",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Borussia Dortmund",
+      "away": "Inter",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-08",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Club Brugge",
+      "away": "Marseille",
+      "home_goals": 3,
+      "away_goals": 0,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-09",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Frankfurt",
+      "away": "Tottenham",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-10",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Barcelona",
+      "away": "Copenhagen",
+      "home_goals": 4,
+      "away_goals": 1,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-11",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Liverpool",
+      "away": "Qarabağ",
+      "home_goals": 6,
+      "away_goals": 0,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-12",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Manchester City",
+      "away": "Galatasaray",
+      "home_goals": 2,
+      "away_goals": 0,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-13",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Pafos",
+      "away": "Slavia Praha",
+      "home_goals": 4,
+      "away_goals": 1,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-14",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Paris Saint-Germain",
+      "away": "Newcastle United",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_points": 1,
+      "away_points": 1,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-15",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "PSV Eindhoven",
+      "away": "Bayern München",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-16",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Union Saint-Gilloise",
+      "away": "Atalanta",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-17",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Benfica",
+      "away": "Real Madrid",
+      "home_goals": 4,
+      "away_goals": 2,
+      "home_points": 2,
+      "away_points": 0,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    },
+    {
+      "id": "2025-26-ucl-r8-18",
+      "date": "2026-01-28",
+      "season": "2025/26",
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "home": "Napoli",
+      "away": "Chelsea",
+      "home_goals": 2,
+      "away_goals": 3,
+      "home_points": 0,
+      "away_points": 2,
+      "status": "finished",
+      "kickoff_utc": null,
+      "venue": null
+    }
+  ],
+  "clubs": [
+    {
+      "name": "Ajax",
+      "country": "Niederlande",
+      "match_points": 0
+    },
+    {
+      "name": "Arsenal",
+      "country": "England",
+      "match_points": 2
+    },
+    {
+      "name": "Atalanta",
+      "country": "Italien",
+      "match_points": 0
+    },
+    {
+      "name": "Athletic Club",
+      "country": "Spanien",
+      "match_points": 0
+    },
+    {
+      "name": "Atlético de Madrid",
+      "country": "Spanien",
+      "match_points": 0
+    },
+    {
+      "name": "Barcelona",
+      "country": "Spanien",
+      "match_points": 2
+    },
+    {
+      "name": "Bayern München",
+      "country": "Deutschland",
+      "match_points": 2
+    },
+    {
+      "name": "Benfica",
+      "country": "Portugal",
+      "match_points": 2
+    },
+    {
+      "name": "Bodø/Glimt",
+      "country": "Norwegen",
+      "match_points": 2
+    },
+    {
+      "name": "Borussia Dortmund",
+      "country": "Deutschland",
+      "match_points": 0
+    },
+    {
+      "name": "Chelsea",
+      "country": "England",
+      "match_points": 2
+    },
+    {
+      "name": "Club Brugge",
+      "country": "Belgien",
+      "match_points": 2
+    },
+    {
+      "name": "Copenhagen",
+      "country": "Dänemark",
+      "match_points": 0
+    },
+    {
+      "name": "Frankfurt",
+      "country": "Deutschland",
+      "match_points": 0
+    },
+    {
+      "name": "Galatasaray",
+      "country": "Türkei",
+      "match_points": 0
+    },
+    {
+      "name": "Inter",
+      "country": "Italien",
+      "match_points": 2
+    },
+    {
+      "name": "Juventus",
+      "country": "Italien",
+      "match_points": 1
+    },
+    {
+      "name": "Kairat Almaty",
+      "country": "Kasachstan",
+      "match_points": 0
+    },
+    {
+      "name": "Leverkusen",
+      "country": "Deutschland",
+      "match_points": 2
+    },
+    {
+      "name": "Liverpool",
+      "country": "England",
+      "match_points": 2
+    },
+    {
+      "name": "Manchester City",
+      "country": "England",
+      "match_points": 2
+    },
+    {
+      "name": "Marseille",
+      "country": "Frankreich",
+      "match_points": 0
+    },
+    {
+      "name": "Monaco",
+      "country": "Frankreich",
+      "match_points": 1
+    },
+    {
+      "name": "Napoli",
+      "country": "Italien",
+      "match_points": 0
+    },
+    {
+      "name": "Newcastle United",
+      "country": "England",
+      "match_points": 1
+    },
+    {
+      "name": "Olympiacos",
+      "country": "Griechenland",
+      "match_points": 2
+    },
+    {
+      "name": "PSV Eindhoven",
+      "country": "Niederlande",
+      "match_points": 0
+    },
+    {
+      "name": "Pafos",
+      "country": "Zypern",
+      "match_points": 2
+    },
+    {
+      "name": "Paris Saint-Germain",
+      "country": "Frankreich",
+      "match_points": 1
+    },
+    {
+      "name": "Qarabağ",
+      "country": "Aserbaidschan",
+      "match_points": 0
+    },
+    {
+      "name": "Real Madrid",
+      "country": "Spanien",
+      "match_points": 0
+    },
+    {
+      "name": "Slavia Praha",
+      "country": "Tschechien",
+      "match_points": 0
+    },
+    {
+      "name": "Sporting CP",
+      "country": "Portugal",
+      "match_points": 2
+    },
+    {
+      "name": "Tottenham",
+      "country": "England",
+      "match_points": 2
+    },
+    {
+      "name": "Union Saint-Gilloise",
+      "country": "Belgien",
+      "match_points": 2
+    },
+    {
+      "name": "Villarreal",
+      "country": "Spanien",
+      "match_points": 0
+    }
+  ],
+  "countries": [
+    {
+      "name": "England",
+      "match_points": 11
+    },
+    {
+      "name": "Belgien",
+      "match_points": 4
+    },
+    {
+      "name": "Deutschland",
+      "match_points": 4
+    },
+    {
+      "name": "Portugal",
+      "match_points": 4
+    },
+    {
+      "name": "Italien",
+      "match_points": 3
+    },
+    {
+      "name": "Frankreich",
+      "match_points": 2
+    },
+    {
+      "name": "Griechenland",
+      "match_points": 2
+    },
+    {
+      "name": "Norwegen",
+      "match_points": 2
+    },
+    {
+      "name": "Spanien",
+      "match_points": 2
+    },
+    {
+      "name": "Zypern",
+      "match_points": 2
+    },
+    {
+      "name": "Aserbaidschan",
+      "match_points": 0
+    },
+    {
+      "name": "Dänemark",
+      "match_points": 0
+    },
+    {
+      "name": "Kasachstan",
+      "match_points": 0
+    },
+    {
+      "name": "Niederlande",
+      "match_points": 0
+    },
+    {
+      "name": "Tschechien",
+      "match_points": 0
+    },
+    {
+      "name": "Türkei",
+      "match_points": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "default": "2026/27",
+  "seasons": [
+    {
+      "season": "2026/27",
+      "status": "unavailable",
+      "match_count": 0,
+      "verified": false
+    },
+    {
+      "season": "2025/26",
+      "status": "partial_unverified",
+      "match_count": 18,
+      "verified": false
+    }
+  ],
+  "note": "No cross-season fallback; 2025/26 contains only UCL matchday 8"
+}

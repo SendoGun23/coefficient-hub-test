@@ -1,0 +1,66 @@
+{
+  "snapshot": "2026-11-05 21:57 (UEFA)",
+  "rows": [
+    {
+      "country": "England",
+      "sum": "107.685",
+      "published": "107.685",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Italy",
+      "sum": "91.732",
+      "published": "91.732",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Spain",
+      "sum": "86.493",
+      "published": "86.493",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Germany",
+      "sum": "84.973",
+      "published": "84.973",
+      "arithmetic_match": true
+    },
+    {
+      "country": "France",
+      "sum": "72.296",
+      "published": "72.296",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Portugal",
+      "sum": "69.150",
+      "published": "69.150",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Belgium",
+      "sum": "64.050",
+      "published": "64.050",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Netherlands",
+      "sum": "56.395",
+      "published": "56.395",
+      "arithmetic_match": true
+    },
+    {
+      "country": "T\u00fcrkiye",
+      "sum": "53.075",
+      "published": "53.075",
+      "arithmetic_match": true
+    },
+    {
+      "country": "Greece",
+      "sum": "47.612",
+      "published": "47.612",
+      "arithmetic_match": true
+    }
+  ],
+  "all_match": true
+}

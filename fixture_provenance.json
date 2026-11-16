@@ -1,0 +1,10 @@
+{
+  "source": "UEFA official fixtures article",
+  "source_url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-and-results/",
+  "retrieved_for_build": "2026-11-16",
+  "scheduled_rows": 72,
+  "default_time": "21:00 CET (as stated by UEFA)",
+  "exceptions": "18:45 CET as explicitly stated",
+  "coverage": "2026/27 UCL league phase, matchdays 5-8",
+  "limitations": "No independent verification of all UEFA competitions or coefficient values; fixtures may change"
+}

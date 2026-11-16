@@ -1,0 +1,384 @@
+{
+  "season": "2026/27",
+  "as_of": "2026-11-05 22:57",
+  "source": "https://eurocoeff.com/en/rankings/",
+  "primary_crosscheck": "https://www.uefa.com/nationalassociations/uefarankings/country/",
+  "source_type": "secondary_aggregator",
+  "verification": "6_of_55_crosschecked_official_snapshot",
+  "scope": "55 five-year totals; NOT five individual season columns",
+  "rows": [
+    {
+      "rank": 1,
+      "association": "England",
+      "total": "107.685",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "23.000",
+        "17.375",
+        "29.464",
+        "28.680",
+        "9.166"
+      ]
+    },
+    {
+      "rank": 2,
+      "association": "Italy",
+      "total": "91.732",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "22.357",
+        "21.000",
+        "21.875",
+        "19.000",
+        "7.500"
+      ]
+    },
+    {
+      "rank": 3,
+      "association": "Spain",
+      "total": "86.493",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "16.571",
+        "16.062",
+        "23.892",
+        "22.093",
+        "7.875"
+      ]
+    },
+    {
+      "rank": 4,
+      "association": "Germany",
+      "total": "84.973",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "17.125",
+        "19.357",
+        "18.421",
+        "21.785",
+        "8.285"
+      ]
+    },
+    {
+      "rank": 5,
+      "association": "France",
+      "total": "72.296",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 6,
+      "association": "Portugal",
+      "total": "69.150",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 7,
+      "association": "Belgium",
+      "total": "64.050",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 8,
+      "association": "Netherlands",
+      "total": "56.395",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 9,
+      "association": "Turkey",
+      "total": "53.075",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "11.800",
+        "12.000",
+        "10.300",
+        "11.075",
+        "7.900"
+      ]
+    },
+    {
+      "rank": 10,
+      "association": "Greece",
+      "total": "47.612",
+      "status": "official_uefa_snapshot_crosschecked",
+      "official_season_columns": [
+        "2.125",
+        "11.400",
+        "12.687",
+        "14.200",
+        "7.200"
+      ]
+    },
+    {
+      "rank": 11,
+      "association": "Czech Republic",
+      "total": "46.325",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 12,
+      "association": "Poland",
+      "total": "45.725",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 13,
+      "association": "Norway",
+      "total": "41.012",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 14,
+      "association": "Denmark",
+      "total": "40.806",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 15,
+      "association": "Cyprus",
+      "total": "35.443",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 16,
+      "association": "Switzerland",
+      "total": "32.200",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 17,
+      "association": "Austria",
+      "total": "29.650",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 18,
+      "association": "Hungary",
+      "total": "29.312",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 19,
+      "association": "Croatia",
+      "total": "27.906",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 20,
+      "association": "Sweden",
+      "total": "27.000",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 21,
+      "association": "Scotland",
+      "total": "26.850",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 22,
+      "association": "Romania",
+      "total": "26.125",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 23,
+      "association": "Ukraine",
+      "total": "24.837",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 24,
+      "association": "Azerbaijan",
+      "total": "24.187",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 25,
+      "association": "Israel",
+      "total": "24.125",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 26,
+      "association": "Slovenia",
+      "total": "23.593",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 27,
+      "association": "Slovakia",
+      "total": "22.375",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 28,
+      "association": "Bulgaria",
+      "total": "22.062",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 29,
+      "association": "Serbia",
+      "total": "19.000",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 30,
+      "association": "Russia",
+      "total": "17.332",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 31,
+      "association": "Iceland",
+      "total": "17.020",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 32,
+      "association": "Republic of Ireland",
+      "total": "16.343",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 33,
+      "association": "Armenia",
+      "total": "15.812",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 34,
+      "association": "Latvia",
+      "total": "14.625",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 35,
+      "association": "Bosnia & Herzegovina",
+      "total": "14.468",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 36,
+      "association": "Kosovo",
+      "total": "14.031",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 37,
+      "association": "Finland",
+      "total": "13.875",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 38,
+      "association": "Kazakhstan",
+      "total": "12.875",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 39,
+      "association": "Liechtenstein",
+      "total": "11.000",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 40,
+      "association": "Moldova",
+      "total": "10.250",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 41,
+      "association": "Faroe Islands",
+      "total": "9.875",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 42,
+      "association": "Albania",
+      "total": "9.500",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 43,
+      "association": "North Macedonia",
+      "total": "8.967",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 44,
+      "association": "Belarus",
+      "total": "8.708",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 45,
+      "association": "Lithuania",
+      "total": "8.125",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 46,
+      "association": "Gibraltar",
+      "total": "7.874",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 47,
+      "association": "Andorra",
+      "total": "7.832",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 48,
+      "association": "Malta",
+      "total": "7.625",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 49,
+      "association": "Estonia",
+      "total": "7.041",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 50,
+      "association": "Georgia",
+      "total": "6.750",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 51,
+      "association": "Northern Ireland",
+      "total": "6.625",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 52,
+      "association": "Luxembourg",
+      "total": "6.250",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 53,
+      "association": "Montenegro",
+      "total": "5.833",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 54,
+      "association": "Wales",
+      "total": "4.499",
+      "status": "secondary_source_not_independently_verified"
+    },
+    {
+      "rank": 55,
+      "association": "San Marino",
+      "total": "2.998",
+      "status": "secondary_source_not_independently_verified"
+    }
+  ],
+  "official_crosschecked_count": 6
+}

@@ -1,0 +1,232 @@
+{
+  "as_of": "2026-11-16",
+  "status": "partial_not_official",
+  "seasons": {
+    "2025/26": {
+      "imported_total": 18,
+      "finished": 18,
+      "scheduled": 0,
+      "past_scheduled_without_result": [],
+      "unmapped_clubs": [],
+      "coverage": [
+        {
+          "competition": "UCL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "LEAGUE",
+          "imported": 18,
+          "finished": 18,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "LEAGUE",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "LEAGUE",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        }
+      ],
+      "country_coefficients_verified": false,
+      "publishable_as_official_ranking": false,
+      "reason": "Full independent match inventory, bonus/divisor audit and UEFA 55-country reconciliation absent"
+    },
+    "2026/27": {
+      "imported_total": 144,
+      "finished": 72,
+      "scheduled": 72,
+      "past_scheduled_without_result": [],
+      "unmapped_clubs": [],
+      "coverage": [
+        {
+          "competition": "UCL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "LEAGUE",
+          "imported": 144,
+          "finished": 72,
+          "scheduled": 72,
+          "independently_complete": false
+        },
+        {
+          "competition": "UCL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "LEAGUE",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UEL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "QUALIFYING",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "PLAYOFF",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "LEAGUE",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        },
+        {
+          "competition": "UECL",
+          "stage": "KNOCKOUT",
+          "imported": 0,
+          "finished": 0,
+          "scheduled": 0,
+          "independently_complete": false
+        }
+      ],
+      "country_coefficients_verified": false,
+      "publishable_as_official_ranking": false,
+      "reason": "Full independent match inventory, bonus/divisor audit and UEFA 55-country reconciliation absent"
+    }
+  },
+  "verification_policy": {
+    "structural_tests": "necessary_not_sufficient",
+    "official_source_url": "not_proof_of_match_by_match_verification",
+    "verified_requires": [
+      "independent exhaustive fixture inventory",
+      "all applicable UEFA scoring and bonus rules",
+      "all 55 country totals reconciled",
+      "documented reference snapshot"
+    ]
+  }
+}

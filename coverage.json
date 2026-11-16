@@ -1,0 +1,93 @@
+{
+  "season": "2025/26",
+  "publishable_as_full_uefa_ranking": false,
+  "data_status": "partial_unverified",
+  "coverage": [
+    {
+      "competition": "UCL",
+      "stage": "QUALIFYING",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UCL",
+      "stage": "PLAYOFF",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UCL",
+      "stage": "LEAGUE",
+      "imported": 18,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UCL",
+      "stage": "KNOCKOUT",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UEL",
+      "stage": "QUALIFYING",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UEL",
+      "stage": "PLAYOFF",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UEL",
+      "stage": "LEAGUE",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UEL",
+      "stage": "KNOCKOUT",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UECL",
+      "stage": "QUALIFYING",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UECL",
+      "stage": "PLAYOFF",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UECL",
+      "stage": "LEAGUE",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    },
+    {
+      "competition": "UECL",
+      "stage": "KNOCKOUT",
+      "imported": 0,
+      "independent_expected": null,
+      "status": "not_audited"
+    }
+  ],
+  "issues": [],
+  "important": "Coverage alone does not verify match scores, UEFA bonuses or coefficient accuracy."
+}
