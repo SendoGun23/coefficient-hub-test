@@ -3,6 +3,8 @@ import json
 import pathlib
 import sys
 import unittest
+from unittest.mock import patch
+import refresh_coefficients as importer
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -35,6 +37,27 @@ class SnapshotTests(unittest.TestCase):
         rows[-1]["name"] = rows[0]["name"]
         with self.assertRaises(ValueError):
             validate_snapshot("clubs", rows)
+
+class ImportSafetyTests(unittest.TestCase):
+    def test_partial_import_never_publishes(self):
+        with patch.object(importer, "get", side_effect=["<html></html>", "<html></html>"]), \
+             patch.object(importer, "extract_countries", side_effect=ValueError("missing countries")), \\
+             patch.object(importer, "extract_clubs", return_value=[{"rank": i + 1, "name": f"Club {i}", "score": 150 - i / 10} for i in range(100)]), \\
+             patch.object(importer, "publish") as publish, \\
+             patch.object(sys, "argv", ["refresh_coefficients.py"]):
+            self.assertEqual(importer.main(), 1)
+            publish.assert_not_called()
+
+    def test_valid_import_publishes_both(self):
+        countries = self.read("countries")["rows"]
+        clubs = self.read("clubs")["rows"]
+        with patch.object(importer, "get", return_value="<html></html>"), \\
+             patch.object(importer, "extract_countries", return_value=countries), \\
+             patch.object(importer, "extract_clubs", return_value=clubs), \\
+             patch.object(importer, "publish") as publish, \\
+             patch.object(sys, "argv", ["refresh_coefficients.py", "--dry-run"]):
+            self.assertEqual(importer.main(), 0)
+            self.assertEqual(publish.call_count, 2)
 
 if __name__ == "__main__":
     unittest.main()
