@@ -4,10 +4,10 @@ import pathlib
 import sys
 import unittest
 from unittest.mock import patch
-import refresh_coefficients as importer
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+import refresh_coefficients as importer
 from refresh_coefficients import validate_snapshot
 
 class SnapshotTests(unittest.TestCase):
