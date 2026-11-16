@@ -4,7 +4,7 @@ import sys
 import unittest
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
-from audit_uefa_fixtures import extract,audit,norm
+from audit_uefa_fixtures import extract,audit,norm,SOURCES
 
 class UefaAuditTests(unittest.TestCase):
     def test_normalization(self):
@@ -19,6 +19,22 @@ class UefaAuditTests(unittest.TestCase):
         self.assertEqual(len(matches),36)
         self.assertEqual(matches[0]["status"],"finished")
         self.assertEqual(matches[1]["status"],"scheduled")
+    def test_three_official_competitions_configured(self):
+        self.assertEqual(set(SOURCES), {"UCL", "UEL", "UECL"})
+        for url in SOURCES.values():
+            self.assertTrue(url.startswith("https://www.uefa.com/"))
+    def test_conference_article_by_team_section_is_not_double_counted(self):
+        rows=[]
+        for i in range(1,19):
+            rows.append(f"<p>Thursday {i} October 2026</p><p>Club A {i}-0 Club B</p><p>Club C vs Club D</p>")
+        html="<article>"+"".join(rows)+"<h2>League phase fixtures by team</h2>"+"".join(rows)+"</article>"
+        self.assertEqual(len(extract(html,"UECL")),36)
+    def test_missing_source_games_are_not_auto_published(self):
+        original=[]
+        source=[dict(date="2026-11-05",home="Ajax",away="Roma",hg=2,ag=0,status="finished")]
+        result=audit(original,source)
+        self.assertEqual(len(result["not_in_archive"]),1)
+        self.assertEqual(original,[])
     def test_conflicts_are_reported_not_applied(self):
         original=[dict(date="2026-11-03",home="Bayern Munich",away="Roma",hg=2,ag=1,status="finished")]
         source=[dict(date="2026-11-03",home="Bayern München",away="Roma",hg=2,ag=0,status="finished")]
