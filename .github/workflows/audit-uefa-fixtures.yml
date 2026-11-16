@@ -25,6 +25,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_uefa_audit.py' -v
       - name: Compare published archive with UEFA news articles
         run: python scripts/audit_uefa_fixtures.py --output uefa-fixture-audit.json
+        timeout-minutes: 3
       - name: Publish readable audit summary
         if: always()
         run: |
