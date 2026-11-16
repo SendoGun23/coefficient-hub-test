@@ -42,6 +42,24 @@ class UefaAuditTests(unittest.TestCase):
         self.assertEqual(report["verified"],0)
         self.assertEqual(len(report["conflicts"]),1)
         self.assertEqual(original[0]["ag"],1)
+    def test_scheduled_match_with_official_result_is_pending_not_conflict(self):
+        original=[dict(date="2026-11-24",home="Ajax",away="Roma",hg=None,ag=None,status="scheduled")]
+        source=[dict(date="2026-11-24",home="Ajax",away="Roma",hg=2,ag=1,status="finished")]
+        result=audit(original,source)
+        self.assertEqual(len(result["pending_results"]),1)
+        self.assertEqual(result["conflicts"],[])
+        self.assertEqual(original[0]["status"],"scheduled")
+    def test_archive_only_matches_are_reported(self):
+        original=[dict(date="2026-11-24",home="Ajax",away="Roma",hg=None,ag=None,status="scheduled")]
+        result=audit(original,[])
+        self.assertEqual(len(result["not_in_source"]),1)
+        self.assertEqual(result["source_count"],0)
+    def test_unrealistic_score_is_rejected(self):
+        rows=[]
+        for i in range(1,19):
+            rows.append(f"<p>Tuesday {i} November 2026</p><p>Club A 31-0 Club B</p><p>Club C vs Club D</p>")
+        with self.assertRaises(ValueError):
+            extract("<article>"+"".join(rows)+"</article>","UCL")
     def test_exact_match(self):
         original=[dict(date="2026-11-03",home="Bayern Munich",away="Roma",hg=2,ag=1,status="finished")]
         source=[dict(date="2026-11-03",home="Bayern München",away="Roma",hg=2,ag=1,status="finished")]
