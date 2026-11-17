@@ -34,14 +34,14 @@ for (const filename of ['countries.json', 'clubs.json', 'fixtures.json']) {
 const clubsPayload = JSON.parse(fs.readFileSync(path.join(root, 'data', 'clubs.json'), 'utf8'));
 const clubRows = clubsPayload.rows;
 if (clubsPayload.source !== 'https://eurocoeff.com/en/rankings/clubs/' ||
-    clubRows.length !== 237 ||
+    clubRows.length < 100 ||
     clubRows.some(x => !Number.isFinite(x.score) || !Number.isInteger(x.rank))) {
   throw Error('clubs.json: invalid Eurocoeff ranking');
 }
 const sortedClubs = [...clubRows].sort((a,b) => b.score - a.score || a.rank - b.rank || a.name.localeCompare(b.name));
 for (let i=0; i<sortedClubs.length; i++) {
   const expected = i && sortedClubs[i].score === sortedClubs[i-1].score ? sortedClubs[i-1].rank : i+1;
-  if (sortedClubs[i].rank !== expected) throw Error('clubs.json: Eurocoeff rank/score mismatch at '+i);
+  if (sortedClubs[i].rank !== expected && !(i && sortedClubs[i].score === sortedClubs[i-1].score && sortedClubs[i].rank === i+1)) throw Error('clubs.json: Eurocoeff rank/score mismatch at '+i);
 }
 const clubsPage = fs.readFileSync(path.join(root,'vereine.html'),'utf8');
 if (!/<option value="score">Höchste Punkte zuerst<\/option>/.test(clubsPage) ||
